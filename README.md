@@ -14,13 +14,13 @@
 6. hiddenコンポーネントの表示
     - Boxと送信ボタンのあるページから、type=hiddenを削除することでinputフィールドを利用する
 7. robot.txtファイルに記載されているファイルにアクセスする
-8. SQLインジェクション
++8. SQLインジェクション
     - フォームにSQLを挿入する
-9. SQLインジェクション
++9. SQLインジェクション
     - フォームにSQLを挿入する
 10. scriptを挿入
     - URLにscriptを挿入し、ファイルを実行させる
 11. xss攻撃
 12. xss攻撃
-13. input value
-14. 
+*13. input value
++14. User Agent Exposure
