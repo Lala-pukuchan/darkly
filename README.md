@@ -23,4 +23,4 @@
 11. xss攻撃
 12. xss攻撃
 13. *input value
-14. +User Agent Exposure
+14. User Agent Exposure
