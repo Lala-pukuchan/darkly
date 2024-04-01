@@ -1,5 +1,0 @@
-- Storage > cookies
-- ![cookie](./cookie_contents.png)
-- [crackstation](https://crackstation.net/)
-- encrypt true to md5 
-- ```b326b5062b2f0e69046810717534cb09```
