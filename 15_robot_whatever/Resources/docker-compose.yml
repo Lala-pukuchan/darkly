@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  dirb-scanner:
+    build: .
+    network_mode: "host"
+    volumes:
+      - ./common_path.txt:/common_path.txt
+      - ./run_dirb.sh:/run_dirb.sh
