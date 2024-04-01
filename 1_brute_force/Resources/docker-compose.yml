@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  hydra:
+    build: .
+    network_mode: "host"
+    volumes:
+      - ./run_hydra.sh:/run_hydra.sh
+      - ./passwords.txt:/passwords.txt
