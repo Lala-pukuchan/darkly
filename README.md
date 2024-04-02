@@ -16,9 +16,9 @@
     - フォームにSQLを挿入する
 9. +SQLインジェクション
     - フォームにSQLを挿入する
-10. scriptを挿入
-    - URLにscriptを挿入し、ファイルを実行させる
 11. xss攻撃
 12. xss攻撃
+    - scriptを挿入
+    - URLにscriptを挿入し、ファイルを実行させる
 13. *input value
 14. User Agent Exposure
