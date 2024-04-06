@@ -48,11 +48,31 @@ CONCAT()関数を使って、複数のカラムを一つの文字列として結
 このクエリは、ユーザーテーブルから特定のデータを抜き出し、攻撃者にとって有益な情報を提供する。
 
 
+![image](./member_user_sql.png)
 
+``` 
+ID: 1 OR 1=1 UNION SELECT user_id, CONCAT(first_name, last_name, town, country, planet, Commentaire, countersign) FROM users 
+First name: 5
+Surname : FlagGetThe424242Decrypt this password -> then lower all the char. Sh256 on it and it's good !5ff9d0165b4f92b14994e5c685cdce28
+```
+
+So we try to decript ``` 5ff9d0165b4f92b14994e5c685cdce28  ``` with MD5
+ https://www.dcode.fr/md5-hash
+![decode_md5_01](./decode_md5_01.png)
+
+https://md5decrypt.net/
+
+
+then, do lower all char and encode ``` fortytwo``` with sha256
+
+
+### flag = ```10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5 ```
+![encript_sha256](./flag_01.png)
 
 # What is UNION Attack ? 
 A UNION attack is a type of SQL Injection where an attacker combines the results of two different SQL queries into a single query result.
 It can be used to illicitly extract information from a database. To conduct an attack, it's necessary to identify the correct number of queries.
 
-UNION攻撃は、SQLインジェクションの一種で、攻撃者が異なるSQLクエリの結果を結合して一つのクエリ結果として返す方法。
+UNION攻撃は、SQLインジェクションの一種で、攻撃者が異なるSQLクエリの結果を結合して一つのクエリ結果として返す方法。元のクエリの結果に追加の結果を結合させることにより行われます。元のクエリの結果に追加の結果を結合させることにより行われる。
+### つまり、攻撃者は元々のクエリに自分が知りたい情報を取得するための別のクエリを追加し、その結果を盗み出すことができる。
 データベースから不正に情報を抽出するために使うことができる。攻撃を行うためには、正しいクエリ数を特定することが必要。
